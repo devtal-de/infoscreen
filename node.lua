@@ -1,7 +1,9 @@
 local INTERVAL = 10
-gl.setup(1024, 768)
+gl.setup(1920, 1080)
 
-deck = {"fahrplan","heute","morgen"}
+logo = resource.load_image("devtal-logo.png")
+
+deck = {"fahrplan"}
 
 slide_source = util.generator(function()
     return deck
@@ -11,7 +13,7 @@ next_slide = sys.now() + INTERVAL
 current_slide = "fahrplan"
 
 function node.render()
-    gl.clear(0, 1, 0, 1) -- green
+    gl.clear(0, 0, 0, 1)
     
 
     if sys.now() > next_slide then
@@ -21,6 +23,7 @@ function node.render()
 
     resource.render_child(current_slide):draw(0, 0, WIDTH, HEIGHT)
 
+    logo:draw(WIDTH -300, 0, WIDTH - 150, 150)
     local clock = resource.render_child("analogclock")
     clock:draw(WIDTH - 150, 0, WIDTH, 150)
 end
