@@ -1,0 +1,52 @@
+#!/usr/bin/python
+import sys
+import time
+import pytz
+import itertools
+import socket
+from calendar import timegm
+from datetime import datetime
+
+
+
+diff = datetime(2015,12,27,10,29,00) - datetime.utcnow() 
+
+lol = itertools.count()
+
+def current_time():
+    now = datetime.utcnow() # + diff
+    timestamp = timegm(now.timetuple()) + now.microsecond / 1000000.
+    # timestamp += lol.next() * 120
+
+    return now, timestamp
+
+def send_clock(now, ts):
+    now = now.replace(tzinfo=pytz.utc)
+    now = now.astimezone(pytz.timezone("Europe/Berlin"))
+    now = now.replace(tzinfo=None)
+    since_midnight = (
+        now -
+        now.replace(hour=0, minute=0, second=0, microsecond=0)
+    )
+    since_midnight = since_midnight.seconds + since_midnight.microseconds / 1000000.
+    #NODE.send('/clock/unix:%f' % ts)
+    #NODE.send('/clock/midnight:%f' % since_midnight)
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.sendto('/clock/unix:%f' % ts, ('127.0.0.1', 4444))
+    sock.sendto('/clock/midnight:%f' % since_midnight, ('127.0.0.1', 4444))
+    print ts
+
+
+def main():
+    while 1:
+        now, ts = current_time()
+        if now.year < 2000:
+            print >>sys.stderr, "too soon"
+            time.sleep(1)
+            continue
+
+        send_clock(now, ts)
+        time.sleep(1)
+
+if __name__ == "__main__":
+    main()
