@@ -1,3 +1,6 @@
 *.ttf
-*.json
 *.pyc
+twitter/config.json
+fahrplan/fahrplan.json
+tweets.json
+
