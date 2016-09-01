@@ -1,5 +1,12 @@
 [
 {
+    "module": "text",
+    "options": {
+        "text": "be\nexcellent\nto\neach\nother"
+    },
+    "chance": 0.3 
+},
+{
     "module": "videos",
     "options": {
         "videos": [
@@ -35,6 +42,12 @@
         "text": "Drink more Mate!"
     },
     "chance": 0.1
+},{
+    "module": "text",
+    "options": {
+        "text": "Hinterlasst immer einen leeren Tisch, wenn ihr geht"
+    },
+    "chance": 0.1
 },
 {
     "module": "text",
@@ -57,6 +70,14 @@
 }
 ,
 {
+    "module": "text",
+    "options": {
+        "text": "Eine Standard Mitgliedschaft kostet 13,37€ im Monat\nVermindet nur 5€"
+    },
+    "chance": 0.2
+}
+,
+{
     "module": "twitter"
 },
 {
@@ -72,5 +93,26 @@
         "text": "Besucht unseren Diaspora* Account unter devtal@tippentappen.de"
     },
     "chance": 0.1
+},
+{
+    "module": "text",
+    "options": {
+        "text": "Utopia ist überall"
+    },
+    "chance": 0.01
+},
+{
+    "module": "text",
+    "options": {
+        "text": "1 + 1 = 10"
+    },
+    "chance": 0.01
+},
+{
+    "module": "text",
+    "options": {
+        "text": "Schei?\nEncoding"
+    },
+    "chance": 0.01
 }
 ]
