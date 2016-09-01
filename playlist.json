@@ -72,7 +72,7 @@
 {
     "module": "text",
     "options": {
-        "text": "Eine Standard Mitgliedschaft kostet 13,37€ im Monat\nVermindet nur 5€"
+        "text": "Eine Standard Mitgliedschaft kostet 13,37€ im Monat\nVermindert nur 5€"
     },
     "chance": 0.2
 }
@@ -83,9 +83,23 @@
 {
     "module": "text",
     "options": {
-        "text": "Getränke gibts für 1,50€ im Kühlschrank im Raum vor dem Balkon.\nNachschub gibt hinter der Stahltür links."
+        "text": "Getränke gibts für 1,50€ im Kühlschrank im Raum vor dem Balkon"
     },
     "chance": 0.2
+},
+{
+    "module": "text",
+    "options": {
+        "text": "Getränke Nachschub gibt hinter der Stahltür links.\nKästen bitte sortenrein"
+    },
+    "chance": 0.2
+},
+{
+    "module": "text",
+    "options": {
+        "text": "Neu hier?\nLese dir mal den \"Safety Instruction\" Artikel im Wiki durch"
+    },
+    "chance": 0.1
 },
 {
     "module": "text",
