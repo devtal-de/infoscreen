@@ -45,14 +45,14 @@
 },{
     "module": "text",
     "options": {
-        "text": "Hinterlasst immer einen leeren Tisch, wenn ihr geht"
+        "text": "Hinterlasst immer einen leeren Tisch, wenn ihr geht."
     },
     "chance": 0.1
 },
 {
     "module": "text",
     "options": {
-        "text": "Wichtige Infos erhaltet ihr über unsere Mailingliste discuss@lists.devtal.de"
+        "text": "Wichtige Infos erhaltet Ihr über unsere Mailingliste discuss@lists.devtal.de"
     },
     "chance": 0.2
 },
@@ -64,7 +64,7 @@
 {
     "module": "text",
     "options": {
-        "text": "May be the Source be with you!"
+        "text": "May the Source be with you!"
     },
     "chance": 0.1
 }
@@ -72,7 +72,7 @@
 {
     "module": "text",
     "options": {
-        "text": "Eine Standard Mitgliedschaft kostet 13,37€ im Monat\nVermindert nur 5€"
+        "text": "Eine Standard Mitgliedschaft kostet 13,37€ im Monat.\nVermindert nur 5€."
     },
     "chance": 0.2
 }
@@ -90,14 +90,14 @@
 {
     "module": "text",
     "options": {
-        "text": "Getränke Nachschub gibt hinter der Stahltür links.\nKästen bitte sortenrein"
+        "text": "Getränke Nachschub gibt hinter der Stahltür links.\nKästen bitte sortenrein halten."
     },
     "chance": 0.2
 },
 {
     "module": "text",
     "options": {
-        "text": "Neu hier?\nLese dir mal den \"Safety Instruction\" Artikel im Wiki durch"
+        "text": "Neu hier?\nLese dir mal den \"Safety Instruction\" Artikel im Wiki durch."
     },
     "chance": 0.1
 },
@@ -111,7 +111,7 @@
 {
     "module": "text",
     "options": {
-        "text": "Utopia ist überall"
+        "text": "Utopia ist überall."
     },
     "chance": 0.01
 },
