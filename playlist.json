@@ -1,132 +1,112 @@
-[
-{
-    "module": "text",
-    "options": {
-        "text": "be\nexcellent\nto\neach\nother"
-    },
-    "chance": 0.3 
-},
-{
-    "module": "videos",
-    "options": {
-        "videos": [
-            {
-                "file": "vid_whew100_2016.mp4",
-                "duration": 50,
-                "raw": false,
-                "text": "Whew 100 2016"
-            },{
-                "file": "vid_nft14.mp4",
-                "duration": 55,
-                "raw": false,
-                "text": "NTF 14 2016"
-            },{
-                "file": "vid_mobilitätstag_2016.mp4",
-                "duration": 35,
-                "raw": false,
-                "text": "Mobilitätstag 2016"
-            },{
-                "file": "vid_TrassenOpenAir_2015.mp4",
-                "duration": 80,
-                "raw": false,
-                "text": "TrassenOpenAir 2015"
-            }
+[{
+	"module": "text",
+	"options": {
+		"text": "be\nexcellent\nto\neach\nother"
+	},
+	"chance": 0.3
+}, {
+	"module": "videos",
+	"options": {
+		"videos": [{
+				"file": "vid_whew100_2016.mp4",
+				"duration": 50,
+				"raw": false,
+				"text": "Whew 100 2016"
+			}, {
+				"file": "vid_nft14.mp4",
+				"duration": 55,
+				"raw": false,
+				"text": "NTF 14 2016"
+			}, {
+				"file": "vid_mobilitätstag_2016.mp4",
+				"duration": 35,
+				"raw": false,
+				"text": "Mobilitätstag 2016"
+			}, {
+				"file": "vid_TrassenOpenAir_2015.mp4",
+				"duration": 80,
+				"raw": false,
+				"text": "TrassenOpenAir 2015"
+			}
 
-        ]
-    },
-    "chance": 0.05
-},
-{
-    "module": "text",
-    "options": {
-        "text": "Drink more Mate!"
-    },
-    "chance": 0.1
-},{
-    "module": "text",
-    "options": {
-        "text": "Hinterlasst immer einen leeren Tisch, wenn ihr geht."
-    },
-    "chance": 0.1
-},
-{
-    "module": "text",
-    "options": {
-        "text": "Wichtige Infos erhaltet Ihr über unsere Mailingliste discuss@lists.devtal.de"
-    },
-    "chance": 0.2
-},
-{
-    "module": "images",
-    "chance": 0.5
-}
-,
-{
-    "module": "text",
-    "options": {
-        "text": "May the Source be with you!"
-    },
-    "chance": 0.1
-}
-,
-{
-    "module": "text",
-    "options": {
-        "text": "Eine Standard Mitgliedschaft kostet 13,37€ im Monat.\nVermindert nur 5€."
-    },
-    "chance": 0.2
-}
-,
-{
-    "module": "twitter"
-},
-{
-    "module": "text",
-    "options": {
-        "text": "Getränke gibts für 1,50€ im Kühlschrank im Raum vor dem Balkon"
-    },
-    "chance": 0.2
-},
-{
-    "module": "text",
-    "options": {
-        "text": "Getränke Nachschub gibt hinter der Stahltür links.\nKästen bitte sortenrein halten."
-    },
-    "chance": 0.2
-},
-{
-    "module": "text",
-    "options": {
-        "text": "Neu hier?\nLese dir mal den \"Safety Instruction\" Artikel im Wiki durch."
-    },
-    "chance": 0.1
-},
-{
-    "module": "text",
-    "options": {
-        "text": "Besucht unseren Diaspora* Account unter devtal@tippentappen.de"
-    },
-    "chance": 0.1
-},
-{
-    "module": "text",
-    "options": {
-        "text": "Utopia ist überall."
-    },
-    "chance": 0.01
-},
-{
-    "module": "text",
-    "options": {
-        "text": "1 + 1 = 10"
-    },
-    "chance": 0.01
-},
-{
-    "module": "text",
-    "options": {
-        "text": "Schei?\nEncoding"
-    },
-    "chance": 0.01
-}
-]
+		]
+	},
+	"chance": 0.05
+}, {
+	"module": "text",
+	"options": {
+		"text": "Drink more Mate!"
+	},
+	"chance": 0.1
+}, {
+	"module": "text",
+	"options": {
+		"text": "Hinterlasst immer einen leeren Tisch, wenn ihr geht."
+	},
+	"chance": 0.1
+}, {
+	"module": "text",
+	"options": {
+		"text": "Wichtige Infos erhaltet Ihr über unsere Mailingliste discuss@lists.devtal.de"
+	},
+	"chance": 0.2
+}, {
+	"module": "images",
+	"chance": 0.5
+}, {
+	"module": "text",
+	"options": {
+		"text": "May the Source be with you!"
+	},
+	"chance": 0.1
+}, {
+	"module": "text",
+	"options": {
+		"text": "Eine Standard Mitgliedschaft kostet 13,37€ im Monat.\nVermindert nur 5€."
+	},
+	"chance": 0.2
+}, {
+	"module": "twitter"
+}, {
+	"module": "text",
+	"options": {
+		"text": "Getränke gibts für 1,50€ im Kühlschrank im Raum vor dem Balkon"
+	},
+	"chance": 0.2
+}, {
+	"module": "text",
+	"options": {
+		"text": "Getränke Nachschub gibt hinter der Stahltür links.\nKästen bitte sortenrein halten."
+	},
+	"chance": 0.2
+}, {
+	"module": "text",
+	"options": {
+		"text": "Neu hier?\nLese dir mal den \"Safety Instruction\" Artikel im Wiki durch."
+	},
+	"chance": 0.1
+}, {
+	"module": "text",
+	"options": {
+		"text": "Besucht unseren Diaspora* Account unter devtal@tippentappen.de"
+	},
+	"chance": 0.1
+}, {
+	"module": "text",
+	"options": {
+		"text": "Utopia ist überall."
+	},
+	"chance": 0.01
+}, {
+	"module": "text",
+	"options": {
+		"text": "1 + 1 = 10"
+	},
+	"chance": 0.01
+}, {
+	"module": "text",
+	"options": {
+		"text": "Schei?\nEncoding"
+	},
+	"chance": 0.01
+}]
