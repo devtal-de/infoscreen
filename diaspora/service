@@ -1,0 +1,73 @@
+#!/usr/bin/python
+import sys
+sys.path.append('..')
+import os
+import time
+import pytz
+import json
+import requests
+import traceback
+import calendar
+from datetime import datetime
+from operator import itemgetter
+
+
+de_tz = pytz.timezone('Europe/Berlin')
+
+def update( tag ):
+    posts = []
+    r = requests.get('https://tippentappen.de/tags/' + tag + '.json')
+    posts = r.json()
+
+
+    #posts = list({v['id']:v for v in posts}.values())
+    #posts = {x['id']:x for x in posts}.values()
+    out = []
+    for post in posts:
+        print(post['created_at'])
+        date = datetime.strptime(post['created_at'][:-6], "%Y-%m-%dT%H:%M:%S")
+        date = date.replace(tzinfo=de_tz).astimezone(pytz.utc)
+        start_unix = calendar.timegm(date.timetuple())
+        out.append(dict(
+            time = start_unix,
+            text = post['text'],
+            author = post['author']['name'],       #screen_name
+            diaspora_id = post['author']['diaspora_id'],   #name
+            profile_image = post['author']['avatar']['large'],
+        ))
+    return out
+
+def main():
+
+    while 1:
+        posts = []
+        try:
+            posts.extend( update("wuppertal") )
+            posts.extend( update("devtal") )
+            posts.extend( update("utopiastadt") )
+        except:
+            print ( "fail")
+            traceback.print_exc()
+            time.sleep(120)
+            continue
+
+        posts.sort(key=itemgetter("time"), reverse=True)
+
+        new_posts = []
+        for item in posts:
+            if item not in new_posts:
+                new_posts.append(item)
+        posts = new_posts
+
+        while len(posts) > 10:
+            posts.pop(10)
+
+        with open("../diaspora.json", "w") as f:
+                json.dump(posts, f)
+
+        print ( "updated diaspora" )
+
+        time.sleep(60)
+
+if __name__ == "__main__":
+    main()

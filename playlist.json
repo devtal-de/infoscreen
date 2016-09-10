@@ -104,6 +104,9 @@
 	},
 	"chance": 0.01
 }, {
+	"module": "diaspora",
+	"chance": 0.2
+}, {
 	"module": "text",
 	"options": {
 		"text": "Schei?\nEncoding"
