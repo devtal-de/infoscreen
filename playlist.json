@@ -104,6 +104,12 @@
 	},
 	"chance": 0.01
 }, {
+	"module": "text",
+	"options": {
+		"text": "Der nächste Trassenexpress fährt in 5 Minuten"
+	},
+	"chance": 0.05
+}, {
 	"module": "diaspora",
 	"chance": 0.2
 }, {
