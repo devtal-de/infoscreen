@@ -62,7 +62,13 @@
 }, {
 	"module": "text",
 	"options": {
-		"text": "Eine Standard Mitgliedschaft kostet 13,37€ im Monat.\nVermindert nur 5€."
+		"text": "Eine Standard Mitgliedschaft kostet 20€ im Monat.\nVermindert nur 5€."
+	},
+	"chance": 0.2
+},  {
+	"module": "text",
+	"options": {
+		"text": "Sourcen zum Infobeamer liegen unter https://github.com/devtal-de/infoscreen"
 	},
 	"chance": 0.2
 }, {
